@@ -1,12 +1,7 @@
-import "./App.css";
-import Header from "./components/Header";
+import Body from "./components/Body";
 
 function App() {
-  return (
-    <div className="bg-[rgba(1,12,30,255)]">
-      <Header />
-    </div>
-  );
+  return <Body />;
 }
 
 export default App;
