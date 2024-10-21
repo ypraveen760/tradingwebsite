@@ -3,6 +3,8 @@ import bg from "../utils/bgone.png";
 import bgtwo from "../utils/bgtwo.png";
 import Tradingdata from "./Tradingdata";
 import KeyFeatures from "./KeyFeatures";
+import SignUpAd from "./SignUpAd";
+import Footer from "./Footer";
 
 const FirstPage = () => {
   return (
@@ -77,6 +79,8 @@ const FirstPage = () => {
         <KeyFeatures />
       </div>
       <div className="w-full h-[2px] bg-white "></div>
+      <SignUpAd />
+      <Footer />
     </div>
   );
 };

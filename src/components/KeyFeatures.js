@@ -15,8 +15,8 @@ const KeyFeatures = () => {
           <p className="text-white font-light">
             Detailed guides on option selling strategies, risk management, and
             market psychology. Video tutorials, eBooks, and webinars hosted by
-            you. A section for beginner traders, with simple, actionable steps
-            to get started.
+            us. A section for beginner traders, with simple, actionable steps to
+            get started.
           </p>
           <button className="bg-[#1cacce] py-2 px-4 border border-white rounded-lg text-white font-medium hover:bg-[#000d1d] hover:border-[#1cacce] hover:text-[#1cacce] cursor-pointer">
             Resources
