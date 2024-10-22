@@ -32,7 +32,7 @@ const Body = () => {
     },
   ]);
   return (
-    <div className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e]">
+    <div className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] min-h-[100vh]">
       <RouterProvider router={appRouter} />
     </div>
   );
