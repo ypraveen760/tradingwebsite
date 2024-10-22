@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <div>
-      <div className="flex justify-evenly">
+      <div className="flex justify-around">
         <div className="w-20 flex items-center">
           <img
             className="rounded-s-lg border-r-2 border-[#1cacce] hover:border-white rounded-full hidden sm:block "

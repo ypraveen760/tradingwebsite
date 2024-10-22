@@ -3,8 +3,6 @@ import bg from "../utils/bgone.png";
 import bgtwo from "../utils/bgtwo.png";
 import Tradingdata from "./Tradingdata";
 import KeyFeatures from "./KeyFeatures";
-import SignUpAd from "./SignUpAd";
-import Footer from "./Footer";
 
 const FirstPage = () => {
   return (
