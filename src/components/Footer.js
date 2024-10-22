@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../utils/Logo.png";
 import {
   FaEnvelope,
@@ -26,10 +27,19 @@ const Footer = () => {
 
         <div className="flex">
           <ul className="flex *:mr-3 *:text-white items-center *:text-lg *:font-medium *:lg:mx-5 ">
-            <li className="hover:text-[#1cacce] cursor-pointer">Scanner</li>
-            <li className="hover:text-[#1cacce] cursor-pointer">Journal</li>
+            <Link to="/scanner">
+              {" "}
+              <li className="hover:text-[#1cacce] cursor-pointer">Scanner</li>
+            </Link>
+            <Link to="/journal">
+              {" "}
+              <li className="hover:text-[#1cacce] cursor-pointer">Journal</li>
+            </Link>
 
-            <li className="hover:text-[#1cacce] cursor-pointer">Contact</li>
+            <a href="mailto:therookietradersofficial@gmail.com">
+              {" "}
+              <li className="hover:text-[#1cacce] cursor-pointer">Contact</li>
+            </a>
           </ul>
         </div>
         <div className="flex items-center *:text-2xl gap-4 mr-7 sm:justify-center ">

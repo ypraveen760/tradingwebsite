@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SignUpAd = () => {
   return (
@@ -15,9 +16,12 @@ const SignUpAd = () => {
           </p>
         </div>
         <div>
-          <button className="bg-white py-2 px-4 border rounded-md font-semibold hover:bg-[#000d1d] hover:border-white] hover:text-white  cursor-pointe ">
-            Get Early access
-          </button>
+          <Link to="/signin">
+            {" "}
+            <button className="bg-white py-2 px-4 border rounded-md font-semibold hover:bg-[#000d1d] hover:border-white] hover:text-white  cursor-pointe ">
+              Get Early access
+            </button>
+          </Link>
         </div>
       </div>
     </div>

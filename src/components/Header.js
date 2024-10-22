@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../utils/Logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,13 +19,24 @@ const Header = () => {
       </div>
       <div className="flex">
         <ul className="flex *:mr-3 *:text-white items-center *:text-lg *:font-medium *:lg:mx-5 ">
-          <li className="hover:text-[#1cacce] cursor-pointer">Home</li>
-          <li className="hover:text-[#1cacce] cursor-pointer">Scanner</li>
-          <li className="hover:text-[#1cacce] cursor-pointer">Journal</li>
-          <li className="hover:text-[#1cacce] cursor-pointer">Blogs</li>
-          <button className="border-2 border-[#1cacce] cursor-pointer hover:border-white hover:text-[#1cacce] rounded-md px-4 py-1">
-            SignIn
-          </button>
+          <Link to="/">
+            {" "}
+            <li className="hover:text-[#1cacce] cursor-pointer">Home</li>
+          </Link>
+          <Link to="/scanner">
+            <li className="hover:text-[#1cacce] cursor-pointer">Scanner</li>
+          </Link>
+          <Link to="/journal">
+            <li className="hover:text-[#1cacce] cursor-pointer">Journal</li>
+          </Link>
+          <Link to="/blogs">
+            <li className="hover:text-[#1cacce] cursor-pointer">Blogs</li>
+          </Link>
+          <Link to="/signin">
+            <button className="border-2 border-[#1cacce] cursor-pointer hover:border-white hover:text-[#1cacce] rounded-md px-4 py-1">
+              SignIn
+            </button>
+          </Link>
         </ul>
       </div>
     </div>

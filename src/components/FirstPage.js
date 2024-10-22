@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 const FirstPage = () => {
   return (
-    <div className="lg:mx-16 sm:mx-0 xl:mx-32  md:mx-10">
+    <div className="lg:mx-16 sm:mx-0 xl:mx-32  md:mx-8">
       <div className="flex sm:flex-row">
         <div className=" w-full  mx-3 mt-6 p-3 sm:flex-row ">
           <h1 className="text-4xl font-semibold mb-2 text-[#1cacce] ">
@@ -79,8 +79,6 @@ const FirstPage = () => {
         <KeyFeatures />
       </div>
       <div className="w-full h-[2px] bg-white "></div>
-      <SignUpAd />
-      <Footer />
     </div>
   );
 };

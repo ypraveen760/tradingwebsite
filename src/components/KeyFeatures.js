@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const KeyFeatures = () => {
   return (
@@ -18,9 +19,11 @@ const KeyFeatures = () => {
             us. A section for beginner traders, with simple, actionable steps to
             get started.
           </p>
-          <button className="bg-[#1cacce] py-2 px-4 border border-white rounded-lg text-white font-medium hover:bg-[#000d1d] hover:border-[#1cacce] hover:text-[#1cacce] cursor-pointer">
-            Resources
-          </button>
+          <Link to="/blogs">
+            <button className="bg-[#1cacce] py-2 px-4 border border-white rounded-lg text-white font-medium hover:bg-[#000d1d] hover:border-[#1cacce] hover:text-[#1cacce] cursor-pointer">
+              Resources
+            </button>
+          </Link>
         </div>
         <div className="*:my-2">
           <h1 className="text-2xl font-semibold  text-[#1cacce]">
@@ -32,9 +35,12 @@ const KeyFeatures = () => {
             and technical indicators. Subscription option for exclusive early
             access to in-depth analysis.
           </p>
-          <button className="bg-[#1cacce] py-2 px-4 border border-white rounded-lg text-white font-medium hover:bg-[#000d1d] hover:border-[#1cacce] hover:text-[#1cacce] cursor-pointer">
-            Analysis
-          </button>
+          <Link to="/scanner">
+            {" "}
+            <button className="bg-[#1cacce] py-2 px-4 border border-white rounded-lg text-white font-medium hover:bg-[#000d1d] hover:border-[#1cacce] hover:text-[#1cacce] cursor-pointer">
+              Analysis
+            </button>
+          </Link>
         </div>
         <div className="*:my-2">
           <h1 className="text-2xl font-semibold  text-[#1cacce]">
@@ -47,9 +53,12 @@ const KeyFeatures = () => {
             to maintain an effective trade journal and analyze it for continual
             improvement.
           </p>
-          <button className="bg-[#1cacce] py-2 px-4 border border-white rounded-lg text-white font-medium hover:bg-[#000d1d] hover:border-[#1cacce] hover:text-[#1cacce] cursor-pointer">
-            Journal
-          </button>
+          <Link to="/journal">
+            {" "}
+            <button className="bg-[#1cacce] py-2 px-4 border border-white rounded-lg text-white font-medium hover:bg-[#000d1d] hover:border-[#1cacce] hover:text-[#1cacce] cursor-pointer">
+              Journal
+            </button>
+          </Link>
         </div>
       </div>
     </div>

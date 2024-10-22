@@ -5,6 +5,8 @@ import { RouterProvider } from "react-router-dom";
 import Scanner from "./Scanner";
 import Login from "./Login";
 import Home from "./Home";
+import Journal from "./Journal";
+import Blogs from "./Blogs";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -17,8 +19,16 @@ const Body = () => {
       element: <Scanner />,
     },
     {
-      path: "login",
+      path: "signin",
       element: <Login />,
+    },
+    {
+      path: "journal",
+      element: <Journal />,
+    },
+    {
+      path: "blogs",
+      element: <Blogs />,
     },
   ]);
   return (
