@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import Scanner from "./Scanner";
