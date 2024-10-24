@@ -5,6 +5,7 @@ import { checkValidData } from "../utils/Validate";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +16,7 @@ const Login = () => {
   const navigate = useNavigate();
   const email = useRef(null);
   const password = useRef(null);
+  const name = useRef(null);
 
   const handleSubmit = () => {
     const message = checkValidData(email.current.value, password.current.value);
@@ -30,8 +32,18 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          console.log(user);
-          navigate("/scanner");
+          updateProfile(auth.currentUser, {
+            displayName: name.current.value,
+            photoURL: "https://example.com/jane-q-user/profile.jpg",
+          })
+            .then(() => {
+              console.log(user);
+              navigate("/scanner");
+            })
+            .catch((error) => {
+              setErrorMessage(error.message);
+            });
+
           // ...
         })
         .catch((error) => {
@@ -56,6 +68,7 @@ const Login = () => {
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
+          console.log(errorCode + errorMessage);
           setErrorMessage("Invalid username or password!");
         });
     }
@@ -76,6 +89,7 @@ const Login = () => {
           </h1>
           {!isSignIn && (
             <input
+              ref={name}
               className="my-3 bg-transparent text-white border border-stone-100 rounded-3xl placeholder:text-cyan-100 placeholder:text-center p-2"
               type="text"
               placeholder="Name"

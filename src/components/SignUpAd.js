@@ -1,7 +1,13 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const SignUpAd = () => {
+  const SignInData = useSelector((store) => store.user);
+  if (SignInData) {
+    return <div className="mt-3"></div>;
+  }
+
   return (
     <div>
       <div className="bg-gradient-to-r from-[#0093E9]  to-[#80D0C7] border rounded-md w-10/12 my-8 h-52 flex *:my-3 flex-col items-center justify-center mx-auto">
