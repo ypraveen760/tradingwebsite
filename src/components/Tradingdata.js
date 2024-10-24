@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { API_KEY } from "./keys";
 
 const Tradingdata = () => {
   const [data, setData] = useState([]);
@@ -17,7 +18,7 @@ const Tradingdata = () => {
         "https://openapiv1.coinstats.app/coins?currency=INR",
         {
           headers: {
-            "X-API-KEY": "FfSC0f50aVglpVAVPLklLJ0M5z5G78zYlBJ6MoBqUBg=",
+            "X-API-KEY": API_KEY,
           },
         }
       );

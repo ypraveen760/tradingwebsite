@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { API_KEY } from "./keys";
 
 const Scanner = () => {
   const [search, setSearch] = useState("");
@@ -22,7 +23,7 @@ const Scanner = () => {
         "https://openapiv1.coinstats.app/coins?currency=INR",
         {
           headers: {
-            "X-API-KEY": "FfSC0f50aVglpVAVPLklLJ0M5z5G78zYlBJ6MoBqUBg=",
+            "X-API-KEY": API_KEY,
           },
         }
       );

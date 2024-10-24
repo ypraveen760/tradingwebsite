@@ -59,7 +59,10 @@ const Footer = () => {
       <div className="flex  items-center justify-center ">
         <FaCopyright className="text-white hover:text-[#1cacce] cursor-pointer" />
         <p className="text-slate-300 p-5 ">
-          2024 TheRookieTraders.All rights reserved
+          2024 TheRookieTraders.All rights reserved{" "}
+          <span className="text-xl text-[#1cacce] hover:text-2xl">
+            Developed by Praveen Yadav
+          </span>
         </p>
       </div>
     </div>
