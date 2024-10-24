@@ -24,8 +24,9 @@ yarn-error.log*
 
 # firebase
 .firebaserc
-.firebase.json
-/firebase
+firebase.json
+.firebase
 /build
 keys.js
 hosting.YnVpbGQ.cache
+firebase.js
